@@ -12,7 +12,10 @@ def cargar_datos() -> pd.DataFrame:
 
 
 df = cargar_datos()
+import streamlit as st
 
+# Ruta o nombre del archivo de imagen
+st.image("images.jpg", caption="Descripción de la imagen", use_container_width=True)
 # --- Filtros en la barra lateral ---
 st.sidebar.title("aguante la u")
 st.sidebar.header("Filtros")
